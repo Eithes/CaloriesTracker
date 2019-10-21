@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": 0,
+        "no-underscore-dangle": ["error", { "allow": ["_id", "_rev"] }],
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "components": [],
+            "specialLink": [],
+            "aspects": ["noHref", "invalidHref", "preferButton"]
+        }],
+        "react/prop-types": [2, { "ignore": ["dispatch"] }]
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}
